@@ -1,0 +1,28 @@
+# --- boto3_python_projects/trigger_api_lambda_sqs/AWSLambdaBasicExecutionRole.json ---
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "sqs:SendMessage"
+                ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:xxxxxxxxxxxx:*",
+                "arn:aws:sqs:us-east-1:xxxxxxxxxxxx:time_queue"
+                ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:xxxxxxxxxxxx:log-group:/aws/lambda/lambda_sqs:*"
+            ]
+        }
+    ]
+}
