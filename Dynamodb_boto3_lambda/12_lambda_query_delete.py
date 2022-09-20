@@ -6,7 +6,7 @@ dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('movies')
 
-# this is the lamda function
+# this is the lambda function
 def lambda_handler(event, context): 
     response = table.query(
         KeyConditionExpression=Key(''title').eq('Batman') 
