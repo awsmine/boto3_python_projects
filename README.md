@@ -6,3 +6,6 @@ https://github.com/awsmine/boto3_python_projects/blob/main/boto3_multiple_ec2.py
 
 2. Trigger_API_Lambda_SQS - Triggering a Lambda function with API Gateway HTTP API type to send messages to SQS Queue using Python and boto3 script.
 https://medium.com/@revathijoshi70/working-with-api-gateway-http-api-type-lambda-function-and-sqs-queue-ceb34703645
+
+3. Dynamodb_boto3_lambda - Create and manipulate DynamoDB table with different methods using Python scripts and boto3.
+https://dev.to/aws-builders/create-and-manipulate-dynamodb-table-with-different-methods-using-python-scripts-and-boto3-37ef
